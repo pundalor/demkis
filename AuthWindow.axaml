@@ -1,0 +1,38 @@
+<Grid
+RowDefinitions="*,*,*,*,*"
+ColumnDefinitions="*,*,*"
+ShowGridLines="True">
+
+    <TextBox
+    Name="login_box"
+    Grid.Row="1"
+    Grid.Column="1"
+    VerticalAlignment="Center"
+    Watermark="введите логин">
+    </TextBox>
+	
+    <TextBox
+    Name="password_box"
+    Grid.Row="2"
+    Grid.Column="1"
+    VerticalAlignment="Center"
+    Watermark="введите пароль">
+    </TextBox>
+
+    <Button
+    Name="auth_button"
+    Grid.Row="3"
+    Grid.Column="1"
+    HorizontalAlignment="Center"
+    Content="Авторизоваться"
+    Click="auth_button_Click"></Button>
+    
+    <Button
+    Name="enter_button"
+    Grid.Row="4"
+    Grid.Column="1"
+    HorizontalAlignment="Center"
+    Content="Войти как гость"
+    Click="enter_button_Click"></Button>
+    
+</Grid>
